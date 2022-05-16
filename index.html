@@ -14,12 +14,6 @@
       <div class="container nav__flex">
         <nav class="header__label">
           <a href="#" class="logo first">Web<span class="logo--black">Studio</span></a>
-          <button type="button" сlass="selection-button">
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-menu" href="./img/icons.svg#icon-menu"></use>
-              <use class="icon-close" href="./img/icons.svg#icon-close"></use>
-            </svg>
-          </button>
           <ul class="nav list">
             <li class="nav__item"><a class="nav__link nav__link--current" href="#">Студия</a></li>
             <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -40,6 +34,13 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <button type="button" сlass="burger-menu is-open" aria-expended="false"
+         data-menu-batton>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="burger-menu__icon" href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu></div>
       </div>
    </header>
    <main>
