@@ -109,7 +109,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: red;
+  background-color: transparent;
 }
 
 .nav {
@@ -472,11 +472,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 15px;
+  margin: -15px;
 }
 
 .client {
   width: 50%;
+  margin: 15px;
   -ms-flex-preferred-size: calc((100%-2*30px)/2);
       flex-basis: calc((100%-2*30px)/2);
 }
@@ -496,8 +497,6 @@ img {
   border: 1px solid var(--border-line);
   border-radius: 4px;
   fill: var(--border-line);
-  width: 210px;
-  height: 92px;
   -webkit-transition: border 250ms var(--cubik), fill 250ms var(--cubik);
   transition: border 250ms var(--cubik), fill 250ms var(--cubik);
 }
