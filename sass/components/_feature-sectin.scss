@@ -1,0 +1,121 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+
+   &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+// .firm {
+//     padding-bottom: 0;
+// }
+
+.features {
+   @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+   }
+    
+    // margin-top: 0;
+    // margin-bottom: 0;
+
+}
+
+.features__list {
+    // margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.features__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-alternativ);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        :nth-child(1n) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.features__icon-list {
+    width: 70px;
+    height: 70px;
+}
+
+.features__title {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    
+    
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+}
+
+.features__text {
+    color: var(--primary-text-color);
+    line-height: 1.71;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+}
+
+
+.team {
+    background-color: var(--background-color-alternativ);
+}
+// .features__title--text {
+
+//     width: 370px;
+//     height: 70px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-bottom: 0;
+
+//     color: var(--primary-white-color);
+//     background-color: rgba(47, 48, 58, 0.8);
+//     ;
+
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+// }
+.features__title--white {
+    color: var(--primary-white-color);
+    margin-top: 60px;
+}
