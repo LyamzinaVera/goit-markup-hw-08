@@ -1,20 +1,35 @@
 .header {
+   
     border-bottom: 1px var(--line-color) solid;
+    position: relative;
 
     &__label {
         display: flex;
+        
+
+        @media screen and (min-width:768px) {
+            
+        }
     }
 
 }
 
 .logo {
     display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
     text-decoration: none;
+
+    @media screen and (min-width:768px){
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 88px;
+    }
 
     &--black {
         color: var(--title-text-color)
@@ -24,15 +39,31 @@
         color: var(--primary-white-color);
     }
 }
-
+//  Burger-menu
 .burger-menu {
-  
-    margin: 0;
+    display: inline-flex;
     padding: 0;
-    margin-left: auto;
+    margin: 0;
     border: 0;
-    background: none;
+    background-color: transparent;
+    
+    margin-left: auto;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+   
 }
+.burger-menu .burger-menu__close{
+    display: none;
+}
+.burger-menu.is-open .burger-menu__close{
+   display: block;
+}
+.burger-menu.is-open .burger-menu__icon{
+    display: none;
+}
+
  .burger-menu__icon {
     display: block;
     width: 40px;
@@ -40,45 +71,18 @@
     fill: currentColor;
  }
 
- .menu-backdrop {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  padding: 48px 40px;
-  width: 100%;
-  height: 796px;
-  background-color: red;
+.burger-menu__close{
+    width: 30px;
+    height: 30px;
 
-  &.is-open {
-   display: block;
-  }
-
-    //     z-index: 10;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    fill: var(--title-text-color);
+    background-color: var(--primary-white-color);
 }
 
-.menu-modal {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    max-width: 450px;
-    height: 100%;
-}
- .menu-modal__item {
-    margin-top: 32px;
- }
-.menu-modal__link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
-    letter-spacing: .02em;
-    color: #212121;
-    text-decoration: none;
-}
 
-.menu-modal__link--current {
-    color: var(--accent-color);
-}
+
 // .first {
 //     padding-top: 24px;
 //     padding-bottom: 25px;
@@ -86,16 +90,20 @@
 // }
 
 .nav {
-
+   
     display: none;
-    // display: flex;
+
+    @media screen and (min-width:768px){
+        display: flex;
+    }
+    
     // margin-left: 93px;
 
   
 
     &__flex {
      display: flex;
-    //  align-items: center;
+     align-items: center;
     position: relative;
     }
 

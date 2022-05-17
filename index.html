@@ -22,31 +22,27 @@
         </nav>
         <ul class="auth">
           <li class="auth__item"><a href="email:info@devstudio.com" class="auth__mail">
-              <svg class="auth__icon" width="16" height="12">
+              <svg class="auth__icon-mail">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a>
           </li>
           <li class="auth__item"><a href="tel:380961111111" class="auth__mail">
-              <svg class="auth__icon" width="10" height="16">
+              <svg class="auth__icon-phone">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a>
           </li>
         </ul>
-        <button type="button" сlass="burger-menu" aria-expended="false"
+        <button type="button" class="burger-menu" aria-expended="false"
          data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="burger-menu__icon" href="./img/icons.svg#icon-menu"></use>
+            <use class="burger-menu__close" href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
         <div class="menu-backdrop" data-menu>
-          <button type="button">
-            <svg>
-              <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <div class="menu-modal">
+         <div class="menu-modal">
             <ul class="menu-modal__nav-list">
               <li class="menu-modal__item">
                 <a class="menu-modal__link menu-modal__link--current" href="#">Студия</a>
@@ -56,6 +52,28 @@
               </li>
               <li class="menu-modal__item">
                 <a class="menu-modal__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="menu-modal__contact-list">
+              <li class="menu-modal__item">
+                <a href="tel:380961111111" class="menu-modal__phone">+380961111111</a>
+              </li>
+              <li class="menu-modal__item">
+                <a href="email:info@devstudio.com" class="menu-modal__mail">email:info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-modal__social-list">
+              <li class="menu-modal__social-item">
+                <a href="#" class="menu-modal__social-link">Instagram</a>
+              </li>
+              <li class="menu-modal__social-item">
+                <a href="#" class="menu-modal__social-link">Twitter</a>
+              </li>
+              <li class="menu-modal__social-item">
+                <a href="#" class="menu-modal__social-link">Facebook</a>
+              </li>
+              <li class="menu-modal__social-item">
+                <a href="#" class="menu-modal__social-link">Linkedin</a>
               </li>
             </ul>
           </div>
@@ -358,7 +376,7 @@
    </main>
    <footer class="footer">
      <div class="container web">
-       <div>
+       <div class="footer__box">
           <a href="#" class="logo">Web<span class="logo--white">Studio</span></a>
           <address>
             <ul class="address">

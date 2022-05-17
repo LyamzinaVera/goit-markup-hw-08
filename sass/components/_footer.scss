@@ -3,13 +3,24 @@
     padding-bottom: 60px;
     background-color: var(--background-color);
 
+    &__box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
 }
 
 .web {
     // display: flex;
     align-items: center;
     text-align: center;
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+    }
 }
+
 
 // .social-web {
 //     margin-left: 70px;

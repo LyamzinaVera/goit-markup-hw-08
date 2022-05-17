@@ -34,6 +34,53 @@
          +38 096 111 11 11</a>
        </li>
       </ul>
+      <button type="button" class="burger-menu" aria-expended="false" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="burger-menu__icon" href="./img/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-backdrop" data-menu>
+        <button type="button" class="menu-close">
+          <svg>
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="menu-modal">
+          <ul class="menu-modal__nav-list">
+            <li class="menu-modal__item">
+              <a class="menu-modal__link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-modal__item">
+              <a class="menu-modal__link menu-modal__link--current" href="#">Портфолио</a>
+            </li>
+            <li class="menu-modal__item">
+              <a class="menu-modal__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu-modal__contact-list">
+            <li class="menu-modal__item">
+              <a href="tel:380961111111" class="menu-modal__phone">+380961111111</a>
+            </li>
+            <li class="menu-modal__item">
+              <a href="email:info@devstudio.com" class="menu-modal__mail">email:info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-modal__social-list">
+            <li class="menu-modal__social-item">
+              <a href="#" class="menu-modal__social-link">Instagram</a>
+            </li>
+            <li class="menu-modal__social-item">
+              <a href="#" class="menu-modal__social-link">Twitter</a>
+            </li>
+            <li class="menu-modal__social-item">
+              <a href="#" class="menu-modal__social-link">Facebook</a>
+            </li>
+            <li class="menu-modal__social-item">
+              <a href="#" class="menu-modal__social-link">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
    </header>
    <main>
@@ -41,11 +88,11 @@
        <div class="container">
           <h1 class="title-project name">Проекты</h1>
           <ul class="menu">
-           <li><button class="menu__button menu__button--invers" type="button">Все</button></li>
-           <li><button class="menu__button menu__button--invers" type="button">Веб-сайты</button></li>
-           <li><button class="menu__button menu__button--invers" type="button">Приложения</button></li>
-           <li><button class="menu__button menu__button--invers" type="button">Дизайн</button></li>
-           <li><button class="menu__button menu__button--invers" type="button">Маркетинг</button></li>
+           <li class="menu__list-item"><button class="menu__button menu__button--invers" type="button">Все</button></li>
+           <li class="menu__list-item"><button class="menu__button menu__button--invers" type="button">Веб-сайты</button></li>
+           <li class="menu__list-item"><button class="menu__button menu__button--invers" type="button">Приложения</button></li>
+           <li class="menu__list-item"><button class="menu__button menu__button--invers" type="button">Дизайн</button></li>
+           <li class="menu__list-item"><button class="menu__button menu__button--invers" type="button">Маркетинг</button></li>
           </ul>
           <ul class="card-set">
            <li class="card-set__card">
@@ -244,5 +291,6 @@
         </form>
      </div>
    </footer>
+   <script src="./js/menu.js"></script>
 </body>
   </html>
