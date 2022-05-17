@@ -40,14 +40,14 @@
     fill: currentColor;
  }
 
- .menu-container {
+ .menu-backdrop {
   display: none;
   position: absolute;
   left: 0;
   top: 100%;
   padding: 48px 40px;
   width: 100%;
-  height: 600px;
+  height: 796px;
   background-color: red;
 
   &.is-open {
@@ -57,9 +57,28 @@
     //     z-index: 10;
 }
 
+.menu-modal {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: 100%;
+}
+ .menu-modal__item {
+    margin-top: 32px;
+ }
+.menu-modal__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: .02em;
+    color: #212121;
+    text-decoration: none;
+}
 
-
-
+.menu-modal__link--current {
+    color: var(--accent-color);
+}
 // .first {
 //     padding-top: 24px;
 //     padding-bottom: 25px;

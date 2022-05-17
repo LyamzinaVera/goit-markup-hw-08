@@ -34,13 +34,32 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-        <button type="button" сlass="burger-menu is-open" aria-expended="false"
-         data-menu-batton>
+        <button type="button" сlass="burger-menu" aria-expended="false"
+         data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="burger-menu__icon" href="./img/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="menu-container" data-menu></div>
+        <div class="menu-backdrop" data-menu>
+          <button type="button">
+            <svg>
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="menu-modal">
+            <ul class="menu-modal__nav-list">
+              <li class="menu-modal__item">
+                <a class="menu-modal__link menu-modal__link--current" href="#">Студия</a>
+              </li>
+              <li class="menu-modal__item">
+                <a class="menu-modal__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu-modal__item">
+                <a class="menu-modal__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
    </header>
    <main>
@@ -445,6 +464,7 @@
     </div>    
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
 
