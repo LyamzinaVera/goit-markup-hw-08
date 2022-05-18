@@ -15,23 +15,24 @@
 
 
 .client-set__icon {
-    width: 106px;
-    height: 60px;
+ 
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid #afb1b8;
+        color: #afb1b8;
 
 }
 
 
 .client-set__item {
 
-    display: block;
-    object-position: center;
-    width: 210px;
-    padding: 16px 52px;
-    box-sizing: border-box;
-    border: 1px solid var(--border-line);
-    border-radius: 4px;
-    fill: var(--border-line);
-    transition: border 250ms var(--cubik), fill 250ms var(--cubik);
+width: 106px;
+    height: 60px;
+    fill: currentColor;
 
 }
 

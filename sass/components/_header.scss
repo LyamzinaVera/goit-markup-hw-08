@@ -31,6 +31,13 @@
         margin-right: 88px;
     }
 
+    @media screen and (min-width:1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+        font-size: 26px;
+    }
+
     &--black {
         color: var(--title-text-color)
     }
