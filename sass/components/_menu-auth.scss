@@ -1,18 +1,25 @@
 .auth {
-    
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    color: var(--primary-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    font-size: 12px;
-    gap: 10px;
+    display: none;
+   
 
-    @media screen and (max-width: 480px) {
-        display: none;
+    color: var(--primary-text-color);
+        font-weight: 500;
+        line-height: 1.14;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        font-size: 12px;
+        gap: 10px;
+   
+
+    @media screen and (min-width: 768px) {
+        display: flex; 
+        margin-left: auto;
+        flex-direction: column;
+       
+        
+        
+       
+
     }
 
     @media screen and (min-width:1200px) {
@@ -27,17 +34,11 @@
   }
 }
 
-// .auth .item+.item {
-//     margin-left: 50px;
-// }
-
-
 
 .auth__mail {
     display: flex;
     // padding-top: 32px;
     // padding-bottom: 32px;
-    margin-left: 30px;
     color: var(--primary-text-color);
     align-items: center;
     text-decoration: none;

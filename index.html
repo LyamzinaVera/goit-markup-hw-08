@@ -9,31 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
-  <body>
+  <body data-body class="body--scroll-hidden body--scroll-hidden::-webkit-scrollbar">
    <header class="header">
       <div class="container nav__flex">
-        <nav class="header__label">
-          <a href="#" class="logo first">Web<span class="logo--black">Studio</span></a>
-          <ul class="nav list">
-            <li class="nav__item"><a class="nav__link nav__link--current" href="#">Студия</a></li>
-            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+        <div class="header__box">
+          <nav class="header__label">
+            <a href="#" class="logo first">Web<span class="logo--black">Studio</span></a>
+            <ul class="nav list">
+              <li class="nav__item"><a class="nav__link nav__link--current" href="#">Студия</a></li>
+              <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="auth">
+            <li class="auth__item"><a href="email:info@devstudio.com" class="auth__mail">
+                <svg class="auth__icon-mail">
+                  <use href="./img/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="auth__item"><a href="tel:380961111111" class="auth__mail">
+                <svg class="auth__icon-phone">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="auth">
-          <li class="auth__item"><a href="email:info@devstudio.com" class="auth__mail">
-              <svg class="auth__icon-mail">
-                <use href="./img/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="auth__item"><a href="tel:380961111111" class="auth__mail">
-              <svg class="auth__icon-phone">
-                <use href="./img/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
         <button type="button" class="burger-menu" aria-expended="false"
          data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -149,19 +151,19 @@
             <li class="work-blok__label">
               <div class="work-blok__display">
                 <p class="features__title features__title--text">Десктопные приложения</p>
-                <img src="./img/layout.jpg" class="img-photo" width="370" height="294" alt="Верстка" />
+                <img srcset="./img/layout_desk.jpg 1x, ./img/layout_desk@2x.jpg 2x" src="./img/layout.jpg" class="img-photo" alt="Верстка" />
               </div>
             </li>
             <li class="work-blok__label">
               <div class="work-blok__display">
                 <p class="features__title features__title--text">Мобильные приложения</p>
-                <img src="./img/design.jpg" class="img-photo" width="370" height="294" alt="Дизайн" />
+                <img srcset="./img/design_desk.jpg 1x, ./img/design_desk@2x.jpg 2x" src="./img/design.jpg" class="img-photo" alt="Дизайн" />
               </div>
             </li>
             <li class="work-blok__label">
               <div class="work-blok__display">
                 <p class="features__title features__title--text">Дизайнерские решения</p>
-                <img src="./img/registration.jpg" class="img-photo" width="370" height="294" alt="Внешнее оформление" />
+                <img srcset="./img/registration_desk.jpg 1x, ./img/registration_desk@2x.jpg 2x" src="./img/registration.jpg" class="img-photo" alt="Внешнее оформление" />
               </div>
               
             </li>
@@ -173,8 +175,13 @@
          <h2 class="section__title">Наша команда</h2>
          <ul class="card-set">
            <li class="card-set__photo">
-             <img src="./img/demyanenko.jpg" width="450" height="460" alt="Игорь Демьяненко" />
              <div class="team-member">
+               <picture>
+                 <source srcset="./img/демячнченко_mob.jpg 1x, ./img/демячнченко_mob@2x.jpg 2x" media="(max-width:767px)">
+                 <source srcset="./img/demynenko_tabl.jpg 1x, ./img/demynenko_tabl@2x.jpg 2x" media="(max-width:1199px)">
+                 <source srcset="./img/demynenko_desk.jpg 1x, ./img/demynenko_desk@2x.jpg 2x" media="(min-width:1200px)">
+                 <img src="./img/demyanenko.jpg" class="img-photo" alt="Игорь Демьяненко"/>
+               </picture>
                <h3 class="team-member__name">Игорь Демьяненко</h3>
                <p class="team-member__position">Product Designer</p>
                 <ul class="set">
@@ -210,8 +217,13 @@
              </div>
            </li>
            <li class="card-set__photo">
-             <img src="./img/repina.jpg" class="img-photo" width="450" height="460" alt="Ольга Репина" />
              <div class="team-member">
+               <picture>
+                 <source  srcset="./img/repina_mob.jpg 1x, ./img/repina_mob@2x.jpg 2x" media="(max-width:767px)">
+                 <source srcset="./img/repina_tabl.jpg 1x ./img/repina_tabl@2x.jpg 2x" media="(max-width:1199px)">
+                 <source srcset="./img/repina_desk.jpg 1x, ./img/repina_desk@2x.jpg 2x" media="(min-width:1200px)">
+                 <img src="./img/repina.jpg" class="img-photo" alt="Ольга Репина" />
+               </picture>
                <h3 class="team-member__name">Ольга Репина</h3>
                <p class="team-member__position">Frontend Developer</p>
                 <ul class="set">
@@ -247,8 +259,13 @@
              </div>
            </li>
            <li class="card-set__photo">
-              <img src="./img/tarasov.jpg" class="img-photo" width="450" height="460" alt="Николай Тарасов" />
               <div class="team-member">
+                <picture>
+                  <source srcset="./img/tarasov_mob.jpg 1x, ./img/tarasov_mob@2x.jpg 2x" media="(max-width:767px)">
+                  <source srcset="./img/tarasov_tabl.jpg 1x, ./img/tarasov_tabl@2x.jpg 2x" media="(max-width:1199px)">
+                  <source srcset="./img/tarasov_desk.jpg 1x, ./img/tarasov_desk@2x.jpg 2x" media="(min-width:1200px)">
+                  <img src="./img/tarasov.jpg" class="img-photo" alt="Николай Тарасов"/>
+                </picture>
                <h3 class="team-member__name">Николай Тарасов</h3>
                <p class="team-member__position">Marketing</p>
                 <ul class="set">
@@ -284,8 +301,13 @@
              </div>
            </li>
            <li class="card-set__photo">
-             <img src="./img/ermakov.jpg" class="img-photo" width="450" height="460" alt="Михаил Ермаков" />
              <div class="team-member">
+               <picture>
+                <source srcset="./img/ermakov_mob.jpg 1x, ./img/ermakov_mob@2x.jpg 2x" media="(max-width:767px)">
+                <source srcset="./img/ermakov_tabl.jpg 1x, ./img/ermakov_tabl@2x.jpg 2x" media="(max-width:1199px)">
+                <source srcset="./img/ermakov_desk.jpg 1x, ./img/ermakov_desk@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="./img/ermakov.jpg" class="img-photo" alt="Михаил Ермаков"/>
+               </picture>
                <h3 class="team-member__name">Михаил Ермаков</h3>
                <p class="team-member__position">UI Designer</p>
                 <ul class="set">
@@ -479,8 +501,8 @@
             Соглашаюсь с рассылкой и принимаю
             <a class="modal__link" href="#">Условия договора</a>
            </label>
-           <button class="hero__button form__button" type="submit">Отправить</button>
-         </div>
+          </div>
+          <button class="hero__button form__button" type="submit">Отправить</button>
         </form>
      </div>
     </div>    

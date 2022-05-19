@@ -1,37 +1,43 @@
 .job {
      display: none;
+
+     @media screen and (min-width:1200px) {
+          display: block;
+          padding: 0;
+     }
     
 }
-// .work-blok {
-//     display: block;
-//     display: flex;
-//     margin-top: 0;
-//     margin-bottom: 0;
-// }
+.work-blok {
+   
+    display: block;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-// .work-blok__label {
-//     margin-right: 30px;
-// }
+.work-blok__label {
+    margin-right: 30px;
+}
 
-// .work-blok__label:last-child {
-//     margin-right: 0;
-// }
+.work-blok__label:last-child {
+    margin-right: 0;
+}
 
-// .work-blok__display {
-//     position: relative;
+.work-blok__display {
+    position: relative;
 
-// }
+}
 
-// .work-list .title {
-//     color: var(--title-text-color);
-// }
+.work-list .title {
+    color: var(--title-text-color);
+}
 
-// .work-list {
-//     display: flex;
-//     margin-top: 0;
-//     margin-bottom: 0;
-// }
+.work-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-// .work-list .photo-team {
-//     margin-right: 30px;
-// }
+.work-list .photo-team {
+    margin-right: 30px;
+}
