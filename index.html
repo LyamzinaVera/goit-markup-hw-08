@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
-  <body data-body class="body--scroll-hidden body--scroll-hidden::-webkit-scrollbar">
+  <body>
    <header class="header">
       <div class="container nav__flex">
         <div class="header__box">
@@ -35,49 +35,48 @@
                 +38 096 111 11 11</a>
             </li>
           </ul>
-        </div>
-        <button type="button" class="burger-menu" aria-expended="false"
-         data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="burger-menu__icon" href="./img/icons.svg#icon-menu"></use>
-            <use class="burger-menu__close" href="./img/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="menu-backdrop" data-menu>
-         <div class="menu-modal">
-            <ul class="menu-modal__nav-list">
-              <li class="menu-modal__item">
-                <a class="menu-modal__link menu-modal__link--current" href="#">Студия</a>
-              </li>
-              <li class="menu-modal__item">
-                <a class="menu-modal__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu-modal__item">
-                <a class="menu-modal__link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="menu-modal__contact-list">
-              <li class="menu-modal__item">
-                <a href="tel:380961111111" class="menu-modal__phone">+380961111111</a>
-              </li>
-              <li class="menu-modal__item">
-                <a href="email:info@devstudio.com" class="menu-modal__mail">email:info@devstudio.com</a>
-              </li>
-            </ul>
-            <ul class="menu-modal__social-list">
-              <li class="menu-modal__social-item">
-                <a href="#" class="menu-modal__social-link">Instagram</a>
-              </li>
-              <li class="menu-modal__social-item">
-                <a href="#" class="menu-modal__social-link">Twitter</a>
-              </li>
-              <li class="menu-modal__social-item">
-                <a href="#" class="menu-modal__social-link">Facebook</a>
-              </li>
-              <li class="menu-modal__social-item">
-                <a href="#" class="menu-modal__social-link">Linkedin</a>
-              </li>
-            </ul>
+          <button type="button" class="burger-menu" aria-expended="false" data-menu-button>
+           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+             <use class="burger-menu__icon" href="./img/icons.svg#icon-menu"></use>
+             <use class="burger-menu__close" href="./img/icons.svg#icon-close"></use>
+           </svg>
+         </button>
+          <div class="menu-backdrop" data-menu>
+            <div class="menu-modal">
+              <ul class="menu-modal__nav-list">
+                <li class="menu-modal__item">
+                  <a class="menu-modal__link menu-modal__link--current" href="#">Студия</a>
+                </li>
+                <li class="menu-modal__item">
+                  <a class="menu-modal__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-modal__item">
+                  <a class="menu-modal__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <ul class="menu-modal__contact-list">
+                <li class="menu-modal__item">
+                  <a href="tel:380961111111" class="menu-modal__phone">+380961111111</a>
+                </li>
+                <li class="menu-modal__item">
+                  <a href="email:info@devstudio.com" class="menu-modal__mail">email:info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="menu-modal__social-list">
+                <li class="menu-modal__social-item">
+                  <a href="#" class="menu-modal__social-link">Instagram</a>
+                </li>
+                <li class="menu-modal__social-item">
+                  <a href="#" class="menu-modal__social-link">Twitter</a>
+                </li>
+                <li class="menu-modal__social-item">
+                  <a href="#" class="menu-modal__social-link">Facebook</a>
+                </li>
+                <li class="menu-modal__social-item">
+                  <a href="#" class="menu-modal__social-link">Linkedin</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -220,7 +219,7 @@
              <div class="team-member">
                <picture>
                  <source  srcset="./img/repina_mob.jpg 1x, ./img/repina_mob@2x.jpg 2x" media="(max-width:767px)">
-                 <source srcset="./img/repina_tabl.jpg 1x ./img/repina_tabl@2x.jpg 2x" media="(max-width:1199px)">
+                 <source srcset="./img/repina_tabl.jpg 1x, ./img/repina_tabl@2x.jpg 2x" media="(max-width:1199px)">
                  <source srcset="./img/repina_desk.jpg 1x, ./img/repina_desk@2x.jpg 2x" media="(min-width:1200px)">
                  <img src="./img/repina.jpg" class="img-photo" alt="Ольга Репина" />
                </picture>

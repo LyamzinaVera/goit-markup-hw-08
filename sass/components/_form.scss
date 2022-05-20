@@ -75,7 +75,7 @@
 }
 .form__field {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form__label {
@@ -143,7 +143,10 @@
 }
 
 
-
+.form__rights {
+    display: block;
+    margin-top: 20px;
+}
 
 
 .form-checkbox {
@@ -165,7 +168,7 @@
     margin: -1px;
     border: 0;
     padding: 0;
-   
+    white-space: nowrap;
    
     overflow: hidden;
 }
