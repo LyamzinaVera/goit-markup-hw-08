@@ -1359,7 +1359,7 @@ textarea {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-modal {
     margin: 0 auto;
     display: -webkit-box;
